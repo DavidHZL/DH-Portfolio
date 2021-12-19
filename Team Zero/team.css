@@ -1,0 +1,237 @@
+/* Reset Default-Style Behaviors */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Basic styleing for all pages */
+body{
+	background-color: #95D9C3;
+}
+#wrapper {
+	display: block;
+	text-align: center;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+/* Nav Styleing for all pages */
+nav .header-container {
+	display: flex;
+	min-width: 40%;
+	justify-content: left;
+	align-items:center;
+	font-size: 50px;
+	padding-left: 6ch;
+	margin-right: 5ch;
+}
+nav{
+	display: flex;
+	width: 100%;
+	padding-top: 50px;
+	padding-bottom: 25px;
+	color:#A7FFF6;
+	background-color: #5c6f68;
+}
+.nav-list {
+	display: flex;
+	flex-direction: row;
+	min-width: 40%;
+	justify-content: right;
+	align-items: center;
+	list-style-type: none;
+	color:rgba(47, 79, 79, 0.541);
+	padding-right: 6ch;
+}
+nav ul li a{
+	max-width: 15%;
+	min-width: 10%;
+	font-size: 24px;
+	padding: 3ch;
+	color: #A4F9C8;
+	text-decoration: none;
+}
+.navname {
+	color: #A7FFF6;
+	font-size: 40px;
+	text-shadow:-2px -1px 1px #A4F9C8;
+  }
+nav ul li a:hover {
+	color: #A4F9C8;
+	text-decoration: underline;
+}
+/* Content Containers used all pages */
+.content-container-1{
+	max-width: 80%;
+	border: 1px transparent black;
+	padding: 20px;
+	margin-top: 5%;
+	color: #5c6f68;
+	text-align: left;
+	margin-left: 10ch;
+}
+.logo {
+	max-width: 20%;
+	margin-right: 10%;
+	margin-top: 5%;
+	float: right;
+}
+.content-container-1 h2 {
+	text-align: left;
+	font-size: 60px;;
+	padding-bottom: 10px;
+	color: #5c6f68;
+	text-shadow: -3px -1px 1px #A7FFF6;
+	text-decoration: #A7FFF6 underline;
+}
+.content-container-2{
+	max-width: 60%;
+	border: 1px transparent black;
+	padding: 20px;
+	margin-top: 17%;
+	color: #5c6f68;
+	display: inline-block;
+	margin-left: 10ch;
+}
+.content-container-2 h2 {
+	text-align: center;
+	font-size: 60px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #5c6f68;
+	text-shadow: -3px -1px 1px #A7FFF6;
+	text-decoration: #A7FFF6 underline;
+}
+.content-container-2 h4 {
+	font-size: 50px;
+	text-align: center;
+	text-shadow: -1px -1px 1px rgb(190,84,228);
+}
+.me {
+	text-align: center;
+	padding: 1em;
+	border-radius: 30%;
+	float: left;
+	margin-right: 15%;
+	margin-top: 4%;
+}
+.content-container-3{
+	max-width: 60%;
+	border: 1px transparent black;
+	padding: 20px;
+	margin-top: 15%;
+	color: #5c6f68;
+	display: inline-block;
+	margin-left: 10ch;
+}
+.content-container-3 h2 {
+	text-align: center;
+	font-size: 60px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #5c6f68;
+	text-shadow: -3px -1px 1px #A7FFF6;
+	text-decoration: #A7FFF6 underline;
+}
+.content-container-1 p, .content-container-2 p, .content-container-3 p {
+	font-size: 42px;
+}
+.content-container-4{
+	max-width: 90%;
+	border: 1px transparent black;
+	padding: 20px;
+	margin-top: 5%;
+	color: #5c6f68;
+	display: inline-block;
+}
+.content-container-4 h2 {
+	text-align: center;
+	font-size: 50px;
+	text-shadow: -1px -1px 1px rgb(190,84,228);
+}
+.content-container-4 h4 {
+	font-size: 50px;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #5c6f68;
+	text-shadow: -3px -1px 1px #A7FFF6;
+	text-decoration: #A7FFF6 underline;
+}
+.content-container-4 p {
+	font-size: 30px;
+}
+/* Styles for links that aren't nav links */
+.alt-links {
+	text-decoration: none;
+	color: #5c6f68;
+	text-shadow: -1px -1px 1px rgb(190,84,228);
+}
+.alt-links:hover {
+	text-decoration: underline;
+	color: #A4F9C8;
+	text-shadow: -1px -1px 1px #5c6f68;
+}
+/* Inspiration card styles */
+.gallery {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 3%;
+}
+.card-container {
+	width: 400px;
+	padding: 10px;
+	border: 1px transparent;
+}
+.card-desc {
+	font-size: 25px;
+	text-align: center;
+}
+/* Survey Styling */
+.survey-heading {
+	text-align: left;
+	font-size: 50px;
+	color: #5c6f68;
+	text-shadow: -1px -1px 1px rgb(190,84,228);
+}
+.survey {
+	margin-top: 2%;
+	text-align: left;
+	font-size: 30px;
+	color: #5c6f68;
+	width: 50%;
+}
+.survey-legend-list {
+	display:inline-flex;
+}
+.txtbox {
+	margin-top: 1%;
+	padding: 12px 18px;
+	font: 20px;
+	border: 2px solid #5c6f68;
+}
+fieldset {
+	border: 2px solid #5c6f68;
+	border-radius: 10px;
+	padding: 5px;
+}
+.submit_btn, .reset_btn {
+	padding: 20px;
+	background-color: #A4F9C8;
+	color:#5c6f68;
+	border-radius: 10px;
+	margin-left: 2ch;
+}
+.submit_btn:hover, .reset_btn:hover {
+	background-color: rgb(190,84,228);
+	color:white;
+}
+/* Footer Styleing */
+footer	{
+	color: #5c6f68;
+    font-size: .80em;
+    font-style: italic;
+    text-align: center;
+	padding: 5em 1em 1em 1em;
+}

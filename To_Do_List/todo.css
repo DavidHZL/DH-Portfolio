@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+  background-color: #f0a04b;
+  display: flexbox;
+  padding-top: 40px;
+}
+.title
+{
+    border:8px transparent;
+    color: #f6c453;
+    padding: 10px;
+    text-align: center;
+    font-size: 80px;
+    text-shadow: 1px -3px 2px black;
+}
+.navname {
+  display:flex;
+  color: #ccf1c1;
+  justify-self: left;
+  font-size: 40px;
+  text-shadow:-2px -1px 1px darkslategrey;
+  padding-left: 5ch;
+  text-decoration: none;
+}
+.container
+{
+    position: relative;
+}
+div.wrapper
+{
+    display: flexbox;
+    position: absolute;
+    width: 80%;
+    height: auto;
+    left: 10%;
+    right: 10%;
+    border: 10px hidden;
+    border-radius: 100px;
+    background-color: #fefbe9;
+    padding-bottom: 30ch;
+}
+.todo-input {
+    width: 80%;
+    padding: 14px 20px;
+    margin:1em auto;
+    display: block;
+    box-sizing: border-box;
+    background-color: #e1eedd;
+    font-size: 30px;
+}
+.addBtn, .clear-all
+{
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #183a1d;
+    color: #e1eedd;
+    appearance: button;
+    border: solid transparent;
+    border-radius: 16px;
+    cursor: pointer;
+    display:inline;
+    margin-left: 30%;
+    margin-bottom: 1em;
+}
+
+.addBtn:hover, .clear-all:hover {
+  background-color: #183a1d69;
+}
+/* Style the close button */
+.close {
+  padding: 5px 10px;
+  right: 0;
+  top: 0;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: black;
+}
+ul {
+    margin: auto 10em;
+    color: #183a1d;
+}
+li {
+    list-style-type: none;
+    font-size: 28px;
+    padding: 5px 10px;
+}
+/* Set all odd list items to a different color (zebra-stripes) */
+ul li:nth-child(odd) {
+  background: #e1eedd;
+}
+ul li:nth-child(even) {
+  background: #e1eedd80;
+}
+
+/* Darker background-color on hover */
+ul li:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}

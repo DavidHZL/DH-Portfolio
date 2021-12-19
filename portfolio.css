@@ -1,0 +1,121 @@
+/* Reset Default-Style Behaviors */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    
+    font-family:'Times New Roman', Garamond, serif;
+    margin: auto;
+    width: 100%;
+    font-size: 24px;
+    color: darkslategray;
+    background-color: #EAE7DC;
+    padding: 1em 1em 1em 1em;
+    
+}
+body {
+    background-color:#D8C3A5;
+    width: 90%;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+.intro-statement{
+    width:50%;
+    text-align: center;
+    margin: auto;
+    padding: 1em 1em 1em 1em;
+}
+.skills-statement{
+    width:50%;
+    text-align: center;
+    margin:auto;
+    padding: 1em 1em 1em 1em;
+}
+.portfolio{
+    width:50%;
+    text-align: center;
+    margin:auto;
+    padding: 1em 1em 1em 1em;
+}
+h3, h2 {
+    color: darkslategray;
+}
+h2 {
+    font-size: xx-large;
+    border-top: medium double #E85A4F;
+}
+p{
+    padding:1em 1em 1em 1em;
+}
+
+/* Nav CSS */
+nav {
+    width: 102.7%;
+    margin: 10px 0;
+    background-color: #D8C3A5;
+
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-self:right;
+    padding: 20px;
+    color: #E85A4F;
+}
+nav ul > * {
+    flex-basis: 10%;
+}
+nav ul > *:nth-child(1) {
+    flex: 1 1 60%;
+}
+nav ul li {
+    font-size: 40px;
+    text-align: center;
+}
+nav ul li .link-button {
+    color: #E85A4F;
+}
+.navname {
+    display:flex;
+    justify-self: left;
+    font-size: 40px;
+    text-shadow:-2px -1px 1px darkslategrey;
+}
+.image-me {
+    padding-bottom: 1em;
+    text-align:center;
+    border-radius: 10%;
+}
+.link-button:link	{
+    color: #E85A4F;
+    text-decoration: none;
+}
+
+.link-button:hover	{
+    color: darkslategray;
+    text-decoration: none;
+    text-shadow:-1px -1px 1px darkslategrey;
+}
+a	{
+    color: #E85A4F;
+    text-decoration: none;
+    text-shadow:-1px -1px 1px darkslategrey;
+}
+    
+a:hover	{
+    color: darkslategray;
+    text-decoration: none;
+}
+/* Footer CSS */
+footer	{
+    background-color: #D8C3A5;
+    font-size: .80em;
+    font-style: italic;
+    text-align: center;
+    padding: 1em;
+}
+
+
