@@ -1,59 +1,72 @@
-* {
-    margin: 0;
-    padding: 0;
+/* Resets layout & sets universal values */
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
+
 body {
-  background-color: #f0a04b;
-  display: flexbox;
-  padding-top: 40px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    background-color: #f0a04b;
 }
-.title
-{
-    border:8px transparent;
+
+body,
+h1,
+p {
+    margin: 0;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+.wrapper {
+    display: flex;
+    background-color: #fefbe9;
+    max-width: 80%;
+    flex-direction: column;
+    margin: auto;
+    border: 10px hidden;
+    border-radius: 100px;
+}
+
+.title-container, .container {
+    margin-inline: auto;
+    width: min(90%, 70.5rem);
+    text-align: center;
+}
+
+.navname {
+    display: flex;
+    color: #ccf1c1;
+    justify-self: left;
+    font-size: 3rem;
+    text-shadow: -2px -1px 1px darkslategrey;
+    padding-left: 5ch;
+    text-decoration: none;
+}
+
+/* Styles container content */
+.title {
     color: #f6c453;
     padding: 10px;
     text-align: center;
     font-size: 80px;
     text-shadow: 1px -3px 2px black;
 }
-.navname {
-  display:flex;
-  color: #ccf1c1;
-  justify-self: left;
-  font-size: 40px;
-  text-shadow:-2px -1px 1px darkslategrey;
-  padding-left: 5ch;
-  text-decoration: none;
-}
-.container
-{
-    position: relative;
-}
-div.wrapper
-{
-    display: flexbox;
-    position: absolute;
-    width: 80%;
-    height: auto;
-    left: 10%;
-    right: 10%;
-    border: 10px hidden;
-    border-radius: 100px;
-    background-color: #fefbe9;
-    padding-bottom: 30ch;
-}
+
 .todo-input {
     width: 80%;
     padding: 14px 20px;
-    margin:1em auto;
-    display: block;
-    box-sizing: border-box;
+    margin: 1em auto;
     background-color: #e1eedd;
     font-size: 30px;
 }
-.addBtn, .clear-all
-{
+
+/* Add & Clear Button styles*/
+.addBtn, .clear-all {
     padding: 10px 20px;
     font-size: 20px;
     background-color: #183a1d;
@@ -62,50 +75,59 @@ div.wrapper
     border: solid transparent;
     border-radius: 16px;
     cursor: pointer;
-    display:inline;
-    margin-left: 30%;
-    margin-bottom: 1em;
 }
 
-.addBtn:hover, .clear-all:hover {
-  background-color: #183a1d69;
-}
+    .addBtn:hover, .clear-all:hover {
+        background-color: #183a1d69;
+    }
+
 /* Style the close button */
 .close {
-  padding: 5px 10px;
-  right: 0;
-  top: 0;
+    padding: 5px 10px;
+    right: 0;
+    top: 0;
 }
 
-.close:hover {
-  background-color: #f44336;
-  color: black;
-}
+    .close:hover {
+        background-color: #f44336;
+        color: black;
+    }
+
+/* styleing to-do list items */
 ul {
-    margin: auto 10em;
     color: #183a1d;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
+
 li {
     list-style-type: none;
     font-size: 28px;
     padding: 5px 10px;
+    text-align: left;
 }
-/* Set all odd list items to a different color (zebra-stripes) */
+
 ul li:nth-child(odd) {
-  background: #e1eedd;
+    background: #e1eedd;
 }
+
 ul li:nth-child(even) {
-  background: #e1eedd80;
+    background: #e1eedd80;
 }
 
-/* Darker background-color on hover */
 ul li:hover {
-  background: #ddd;
+    background: #ddd;
 }
 
-/* When clicked on, add a background color and strike out text */
 ul li.checked {
-  background: #888;
-  color: #fff;
-  text-decoration: line-through;
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+/* Mobile optimization */
+@media (max-width: 400px) {
+    .wrapper {
+        max-width: 100%;
+    }
 }
