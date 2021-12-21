@@ -1,121 +1,179 @@
-/* Reset Default-Style Behaviors */
-* {
-    margin: 0;
-    padding: 0;
+*,
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
-#wrapper {
-    
-    font-family:'Times New Roman', Garamond, serif;
-    margin: auto;
-    width: 100%;
-    font-size: 24px;
-    color: darkslategray;
-    background-color: #EAE7DC;
-    padding: 1em 1em 1em 1em;
-    
-}
 body {
-    background-color:#D8C3A5;
-    width: 90%;
-    max-width: 1800px;
-    margin: 0 auto;
-}
-.intro-statement{
-    width:50%;
-    text-align: center;
-    margin: auto;
-    padding: 1em 1em 1em 1em;
-}
-.skills-statement{
-    width:50%;
-    text-align: center;
-    margin:auto;
-    padding: 1em 1em 1em 1em;
-}
-.portfolio{
-    width:50%;
-    text-align: center;
-    margin:auto;
-    padding: 1em 1em 1em 1em;
-}
-h3, h2 {
+    background-color: #D8C3A5;
+    font-size: 2rem;
     color: darkslategray;
 }
+
+body,
+h1,
+h2,
+h3,
+p {
+    margin: 7rem;
+}
+
+h1, h2, h3 {
+    font-family: var(--ff-accent);
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 1em;
+}
+
+h2,
+h3,
+p {
+    margin-bottom: 1em;
+}
+
 h2 {
-    font-size: xx-large;
     border-top: medium double #E85A4F;
 }
-p{
-    padding:1em 1em 1em 1em;
-}
 
-/* Nav CSS */
 nav {
-    width: 102.7%;
-    margin: 10px 0;
-    background-color: #D8C3A5;
+    max-width: 100%;
+}
 
-}
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-self:right;
-    padding: 20px;
+    nav ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: #E85A4F;
+    }
+
+        nav ul li {
+            font-size: 3rem;
+            min-width: 20%;
+            padding: 0.5em;
+        }
+
+.link-button:link {
     color: #E85A4F;
+    text-decoration: none;
 }
-nav ul > * {
-    flex-basis: 10%;
+
+.link-button:hover {
+    color: darkslategray;
+    text-decoration: none;
+    text-shadow: -1px -1px 1px darkslategrey;
 }
-nav ul > *:nth-child(1) {
-    flex: 1 1 60%;
+
+a {
+    color: #E85A4F;
+    text-decoration: none;
+    text-shadow: -1px -1px 1px darkslategrey;
 }
-nav ul li {
+
+    a:hover {
+        color: darkslategray;
+        text-decoration: none;
+    }
+
+.navname {
+    display: flex;
     font-size: 40px;
+    text-shadow: -2px -1px 1px darkslategrey;
+    min-width: 10%;
+    text-align: center;
+    align-items: center;
+}
+
+@media (max-width: 1000px) {
+    nav ul li {
+        min-width: 10%;
+        padding: .5em;
+        font-size: 2.2rem;
+    }
+
+    .navname {
+        min-width: 5%;
+        padding: .1em;
+        font-size: 2rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    p {
+        margin: 2rem;
+    }
+
+    body {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+        nav ul li {
+            min-width: 10%;
+            padding: .1em;
+            font-size: 2rem;
+        }
+
+    .navname {
+        min-width: 10%;
+        padding: .1em;
+        font-size: 2.5rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+    body,
+    h1,
+    h2,
+    h3,
+    p {
+        margin: 0;
+    }
+
+    body {
+        font-size: 1.5rem;
+    }
+}
+
+
+.image-me {
+    max-width: 100%;
+    display: block;
+    padding: 1em;
+    margin: 0 auto;
+    border-radius: 20%;
+}
+
+.text-center {
     text-align: center;
 }
-nav ul li .link-button {
-    color: #E85A4F;
-}
-.navname {
-    display:flex;
-    justify-self: left;
-    font-size: 40px;
-    text-shadow:-2px -1px 1px darkslategrey;
-}
-.image-me {
-    padding-bottom: 1em;
-    text-align:center;
-    border-radius: 10%;
-}
-.link-button:link	{
-    color: #E85A4F;
-    text-decoration: none;
+
+section {
+    padding: 4em 0;
+    background-color: #EAE7DC;
 }
 
-.link-button:hover	{
-    color: darkslategray;
-    text-decoration: none;
-    text-shadow:-1px -1px 1px darkslategrey;
+.container {
+    margin-inline: auto;
+    width: min(70%, 60rem);
 }
-a	{
-    color: #E85A4F;
-    text-decoration: none;
-    text-shadow:-1px -1px 1px darkslategrey;
-}
-    
-a:hover	{
-    color: darkslategray;
-    text-decoration: none;
-}
+
 /* Footer CSS */
-footer	{
+footer {
     background-color: #D8C3A5;
     font-size: .80em;
     font-style: italic;
     text-align: center;
     padding: 1em;
 }
-
-
