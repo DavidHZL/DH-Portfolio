@@ -58,7 +58,6 @@ p {
 
 img {
     max-width: 100%;
-    display: block;
 }
 
 section {
@@ -179,6 +178,7 @@ nav ul li a:hover {
 	font-size: 1.25rem;
 	text-align: center;
 }
+
 
 /* Survey Styling */
 .survey-heading {
