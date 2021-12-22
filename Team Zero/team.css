@@ -1,7 +1,8 @@
+/* Default styleing */
 *,
 *::before,
 *::after {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 #wrapper {
@@ -10,10 +11,10 @@
 }
 
 body {
-	font-weight: 400;
-	font-size: 1.3125rem;
-	line-height: 1.6;
-	background-color: #95D9C3;
+    font-weight: 400;
+    font-size: 1.3125rem;
+    line-height: 1.6;
+    background-color: #95D9C3;
 }
 
 body,
@@ -21,27 +22,26 @@ h1,
 h2,
 h3,
 p {
-	margin: 0;
+    margin: 0;
 }
 
-h1, h2, h3 {
-	font-weight: 900;
-	line-height: 1;
-	margin-bottom: 1em;
+h1,h2,h3 {
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 1em;
 }
 
 h2,
 h3,
 p {
-	margin-bottom: 1em;
+    margin-bottom: 1em;
 }
-
 p {
-	font-size: 42px;
+    font-size: 42px;
 }
 
 .h2-style {
-	text-align: center;
+    text-align: center;
 	font-size: 60px;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -51,40 +51,38 @@ p {
 }
 
 .h4-style {
-	font-size: 50px;
+    font-size: 50px;
 	text-align: center;
 	text-shadow: -1px -1px 1px rgb(190,84,228);
 }
 
 img {
-	max-width: 100%;
-	display: block;
+    max-width: 100%;
+    display: block;
 }
 
 section {
-	padding: 5rem 0;
+    padding: 5rem 0;
 }
 
 /* Nav Styleing for all pages */
 .header-container {
-	display: flex;
+    display: flex;
 	min-width: 40%;
 	justify-content: left;
-	align-items: center;
-	text-align: center;
+	align-items:center;
+    text-align: center;
 	font-size: 50px;
 	padding-left: 7rem;
 	margin-right: 5rem;
-	margin-top: 4rem;
+    margin-top: 4rem;
 }
-
-nav {
+nav{
 	display: flex;
 	width: 100%;
-	color: #A7FFF6;
+	color:#A7FFF6;
 	background-color: #5c6f68;
 }
-
 .nav-list {
 	display: flex;
 	flex-direction: row;
@@ -92,11 +90,10 @@ nav {
 	justify-content: right;
 	align-items: center;
 	list-style-type: none;
-	color: rgba(47, 79, 79, 0.541);
+	color:rgba(47, 79, 79, 0.541);
 	padding-right: 6ch;
 }
-
-nav ul li a {
+nav ul li a{
 	max-width: 15%;
 	min-width: 10%;
 	font-size: 2rem;
@@ -104,11 +101,10 @@ nav ul li a {
 	color: #A4F9C8;
 	text-decoration: none;
 }
-
 .navname {
 	color: #A7FFF6;
 	font-size: 2rem;
-	text-shadow: -2px -1px 1px #A4F9C8;
+	text-shadow:-2px -1px 1px #A4F9C8;
 }
 
 nav ul li a:hover {
@@ -116,54 +112,50 @@ nav ul li a:hover {
 	text-decoration: underline;
 }
 
+/* Content Styles */
 .Intro-Index {
-	display: inline-block;
-	max-width: 80%;
+    display: inline-block;
+    max-width: 80%;
 	border: 1px transparent black;
 	padding: 20px;
 	margin-top: 5%;
 	color: #5c6f68;
 	text-align: left;
 }
-
-.About-Index {
+.About-Index{
 	max-width: 60%;
 	border: 1px transparent black;
 	padding: 20px;
 	margin-top: 15%;
 	color: #5c6f68;
 	display: inline-block;
-	text-align: right;
+    text-align: right;
 }
-
 .CurrProj-Index {
-	max-width: 60%;
+    max-width: 60%;
 	border: 1px transparent black;
 	padding: 20px;
 	margin-top: 17%;
 	color: #5c6f68;
 	display: inline-block;
 }
-
 .Glade-Games {
-	max-width: 90%;
+    max-width: 90%;
 	border: 1px transparent black;
 	padding: 20px;
 	margin-top: 5%;
 	color: #5c6f68;
 	display: inline-block;
 }
-
 .logo {
 	max-width: 20%;
 	margin-right: 10%;
-	margin-left: 10%;
+    margin-left: 10%;
 	margin-top: 5%;
-	float: right;
+    float: right;
 }
 
 .me {
-	text-align: center;
 	padding: .5em;
 	border-radius: 30%;
 	float: left;
@@ -174,18 +166,17 @@ nav ul li a:hover {
 /* Inspiration card styles */
 .gallery {
 	display: flex;
+	flex-direction: row;
 	justify-content: space-between;
 	margin-bottom: 3%;
 }
-
 .card-container {
-	width: 400px;
-	padding: 10px;
+	width: 100%;
+	padding: 0.5rem;
 	border: 1px transparent;
 }
-
 .card-desc {
-	font-size: 25px;
+	font-size: 1.25rem;
 	text-align: center;
 }
 
@@ -196,7 +187,6 @@ nav ul li a:hover {
 	color: #5c6f68;
 	text-shadow: -1px -1px 1px rgb(190,84,228);
 }
-
 .survey {
 	margin-top: 2%;
 	margin-left: 5%;
@@ -205,98 +195,117 @@ nav ul li a:hover {
 	color: #5c6f68;
 	width: 50%;
 }
-
 .survey-legend-list {
-	display: inline-flex;
+	display:inline-flex;
 }
-
 .txtbox {
 	margin-top: 1%;
 	padding: 12px 18px;
 	font: 20px;
 	border: 2px solid #5c6f68;
 }
-
 fieldset {
 	border: 2px solid #5c6f68;
 	border-radius: 10px;
 	padding: 5px;
 }
-
 .submit_btn, .reset_btn {
 	padding: 20px;
 	background-color: #A4F9C8;
-	color: #5c6f68;
+	color:#5c6f68;
 	border-radius: 10px;
 	margin-left: 2ch;
 }
-
-	.submit_btn:hover, .reset_btn:hover {
-		background-color: rgb(190,84,228);
-		color: white;
-	}
+.submit_btn:hover, .reset_btn:hover {
+	background-color: rgb(190,84,228);
+	color:white;
+}
 
 /* Footer Styleing */
-footer {
+footer	{
 	color: #5c6f68;
-	font-size: .80em;
-	font-style: italic;
-	text-align: center;
+    font-size: .80em;
+    font-style: italic;
+    text-align: center;
 	padding: 5em 1em 1em 1em;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1200px)  {
 
-	.nav-list {
-		display: flex;
+    .nav-list {
+        display: flex;
+        flex-direction: column;
+        min-width: 15%;
+    }
+    .logo {
+        
+        float: none;
+        max-width: none;
+        margin: 0 auto;
+		display: block;
+        padding: 1em;
+    }
+    p {
+        text-align: center;
+    }
+	.gallery {
 		flex-direction: column;
-		min-width: 15%;
 	}
-
-	.logo, .me {
-		float: none;
-		max-width: none;
+	.card-container {
+		margin-bottom: 2em;
+	}
+	.gallery-img {
+		display: block;
 		margin: 0 auto;
-		text-align: center;
-		padding: 1em;
 	}
-
-	p {
-		text-align: center;
+	.survey {
+		width: 80%;
 	}
 }
+@media (max-width: 500px)  {
 
-@media (max-width: 500px) {
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        align-items: baseline;
+    }
 
-	.nav-list {
-		display: flex;
-		flex-direction: row;
-		justify-content: right;
-		align-items: baseline;
+    nav ul li a{
+        max-width: 5%;
+        font-size: 1.5rem;
+        padding: 1ch;
+        margin-left: 60%;
+    }
+
+    .header-container {
+        font-size: 40px;
+        padding-top: 2rem;
+    }
+    p {
+        text-align: center;
+        font-size: 25px;
+    }
+    .logo {
+        
+        margin: 0 auto;
+		display: block;
+        padding: 1em;
+    }
+	.me {
+		display: none;
 	}
-
-	nav ul li a {
-		max-width: 5%;
-		font-size: 1.5rem;
-		padding: 1ch;
-		margin-left: 60%;
+	.gallery {
+		flex-direction: column;
 	}
-
-	.header-container {
-		font-size: 40px;
-		padding-top: 2rem;
+	.card-container {
+		margin-bottom: 2em;
 	}
-
-	p {
-		text-align: center;
-		font-size: 25px;
-	}
-
-	.logo, .me {
-		float: none;
-		max-width: none;
+	.gallery-img {
+		display: block;
 		margin: 0 auto;
-		text-align: center;
-		padding: 1em;
+	}
+	.survey {
+		min-width: 90%;
 	}
 }
